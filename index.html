@@ -7,7 +7,7 @@
   </head>
   <body>
   <header class="page-header">
-    <a class="page-logo" href="index.html">
+    <a class="logo" href="index.html">
       <img src="images/page-header/logo.svg" alt="Логотип сайта Седона." width="139" height="70">
     </a>
     <nav class="navigation">
@@ -35,13 +35,12 @@
             <span class="visually-hidden">
               Избранное
             </span>
+            <span>12</span>
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="button navigation-button">
-              Хочу сюда!
-            </span>
+          <a class="button navigation-button" href="#">
+            Хочу сюда!
           </a>
         </li>
       </ul>
@@ -121,13 +120,13 @@
     </section>
     <section class="subscription">
       <h2 class="main-title">Подпишитесь на рассылку</h2>
-      <p class="main-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <p class="main-description subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="subscription-form-email">
           <label class="visually-hidden" for="email">E-mail</label>
-          <input type="email" name="email" id="email" placeholder="Ваш е-mail">
+          <input class="subscription-email-input" type="email" name="email" id="email" placeholder="Ваш е-mail">
         </p>
-        <button class="button button-additional" type="submit">Подписаться</button>
+        <button class="button main-button button-additional" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
