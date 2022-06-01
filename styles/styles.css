@@ -209,6 +209,13 @@ body {
   background-color: #82B3D3;
 }
 
+/* Footer */
+
+.page-footer {
+  display: flex;
+  margin: 40px 70px 30px;
+}
+
 .footer-contacts-phone {
   font-family: inherit;
   font-size: 40px;
@@ -218,6 +225,34 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.footer-social {
+  max-width: 145px;
+  margin-right: auto;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-social-link {
+  width: 33%;
+}
+
+.footer-contacts {
+  width: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-academylogo {
+  width: 115px;
+  margin-left: auto;
+}
+
+/* Catalog */
 
 .filter {
   background: rgba(131, 179, 211, 0.2) url("../images/background/catalog-background.jpg") no-repeat 50% 0/100% auto;
