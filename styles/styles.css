@@ -23,6 +23,17 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -48,36 +59,39 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 20px;
   font-weight: 700;
   margin: 0;
   padding: 0;
-  width: 500px;
-  display: flex;
-}
-
-.navigation-user {
-  max-width: 305px;
-}
-
-.navigation-item {
-  margin-right: 34px;
-}
-
-.navigation-user .navigation-item {
-  margin-right: 0;
-}
-
-.navigation-user .navigation-item:nth-child(2) {
-  margin-right: 20px;
+  width: 390px;
+  list-style-type: none;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 17px;
   text-decoration: none;
   color: #000000;
 }
 
+.navigation-user {
+  max-width: 300px;
+}
+
+.navigation-user .navigation-link {
+  padding: 0;
+}
+
+.navigation-user .navigation-item {
+  min-width: 42px;
+  min-height: 66px;
+  padding: 0;
+}
+
 .button {
+  display: block;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -87,6 +101,13 @@ body {
   text-decoration: none;
   color: #ffffff;
   background-color: #756157;
+  border-radius: 4px;
+}
+
+.navigation-button {
+  min-width: 160px;
+  padding: 9px 15px 8px;
+  margin: 14px 0 14px 20px;
 }
 
 /* Main-index */
@@ -99,7 +120,7 @@ body {
 .greetings {
   display: flex;
   flex-direction: column;
-  background: #82B3D3 url("../images/background/index-background.jpg") no-repeat 50% 0/100% auto;
+  background: url("../images/background/index-background.jpg") no-repeat 50% 0/100% auto;
   text-align: center;
 }
 
