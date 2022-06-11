@@ -218,6 +218,12 @@ body {
   margin: 0 0 30px;
 }
 
+.advantages-item:nth-child(4) .advantages-title,
+.advantages-item:nth-child(5) .advantages-title {
+  margin: 0 30px 30px;
+}
+
+
 .advantages-number {
   display: block;
   margin-bottom: 30px;
