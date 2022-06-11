@@ -223,7 +223,6 @@ body {
   margin: 0 30px 30px;
 }
 
-
 .advantages-number {
   display: block;
   margin-bottom: 30px;
@@ -231,10 +230,12 @@ body {
 
 .advantages-description {
   color: #333333;
-  margin: 0;
 }
 
+.advantages-description,
 .advantages-subdescription {
+  display: flex;
+  flex-grow: 1;
   margin: 0;
 }
 
