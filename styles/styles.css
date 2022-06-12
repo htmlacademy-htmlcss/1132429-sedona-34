@@ -14,12 +14,17 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
+  height: 100%;
 }
 
 .visually-hidden {
@@ -36,6 +41,9 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 /* Header */
@@ -118,6 +126,7 @@ body {
 .main-index {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .greetings {
@@ -182,10 +191,16 @@ body {
 }
 
 .advantages-photo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   width: 800px;
 }
 
 .advantages-image {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   vertical-align: middle;
 }
 
@@ -329,7 +344,7 @@ body {
 
 .page-footer {
   display: flex;
-  margin: 40px 70px 30px;
+  padding: 40px 70px 30px;
 }
 
 .footer-social {
@@ -382,6 +397,7 @@ body {
 .main-inner {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .filter {
