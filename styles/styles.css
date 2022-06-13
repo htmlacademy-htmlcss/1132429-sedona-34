@@ -256,6 +256,7 @@ body {
   flex-direction: column;
   flex-grow: 1;
   vertical-align: middle;
+  object-fit: cover;
 }
 
 .advantages-subitem {
@@ -417,8 +418,21 @@ body {
 }
 
 .footer-social-link {
+  position: relative;
   width: 47px;
   height: 40px;
+}
+
+.social-icon {
+  fill: #83B3D3;
+}
+
+.social-icon:hover {
+  fill: #68A2CA;
+}
+
+.social-icon:active {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-contacts {
