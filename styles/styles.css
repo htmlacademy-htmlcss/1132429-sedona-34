@@ -487,13 +487,17 @@ body {
 
 .breadcrumbs {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  margin-left: 2px;
   list-style-type: none;
 }
 
 .breadcrumbs-item {
+  position: relative;
   margin-right: 25px;
 }
 
@@ -501,7 +505,23 @@ body {
   margin-right: 0;
 }
 
+.breadcrumbs-item:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 5px;
+  height: 8px;
+  background: url("../images/icons/breadcrumbs-arrow.svg") no-repeat 50% 50%;
+  top: 7px;
+  right: -15px;
+}
+
+.breadcrumbs-icon {
+  fill: #FFFFFF;
+}
+
 .breadcrumbs-link {
+  display: block;
   font-style: inherit;
   font-size: 16px;
   line-height: 21px;
