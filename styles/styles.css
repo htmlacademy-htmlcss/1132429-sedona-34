@@ -427,14 +427,6 @@ body {
   fill: #83B3D3;
 }
 
-.social-icon:hover {
-  fill: #68A2CA;
-}
-
-.social-icon:active {
-  fill: rgba(104, 162, 202, 0.3);
-}
-
 .footer-contacts {
   display: flex;
   padding: 5px 194px 5px 195px;
@@ -458,6 +450,7 @@ body {
   justify-content: center;
   width: 115px;
   margin-left: auto;
+  fill: #000;
 }
 
 /* Catalog */
@@ -824,4 +817,81 @@ body {
 
 .catalog-email-input {
   background-color: #f2f2f2;
+}
+
+.navigation-button:hover,
+.main-button:hover {
+  background-color: #615048;
+}
+
+.navigation-button:focus,
+.main-button:focus {
+  background-color: #615048;
+}
+
+.navigation-button:active,
+.main-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation-button:disabled,
+.main-button:disabled,
+.button-additional:disabled {
+  background-color: #E5E5E5;
+}
+
+.navigation-link:hover,
+.footer-contacts-phone:hover {
+  color: #756157;
+}
+
+.navigation-link:focus,
+.footer-contacts-phone:focus,
+.htmlacademy-logo:focus {
+  color: #756157;
+}
+
+.navigation-link:active,
+.footer-contacts-phone:active,
+.htmlacademy-logo:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.navigation-icon:hover,
+.footer-academylogo:hover {
+  fill: #756157;
+}
+
+.navigation-icon:focus,
+.footer-academylogo:focus {
+  fill: #756157;
+}
+
+.navigation-icon:active,
+.footer-academylogo:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.button-additional:hover {
+  background-color: #68A2CA;
+}
+
+.button-additional:focus {
+  background-color: #68A2CA;
+}
+
+.button-additional:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.social-icon:hover {
+  fill: #68A2CA;
+}
+
+.social-icon:focus {
+  fill: #68A2CA;
+}
+
+.social-icon:active {
+  fill: rgba(104, 162, 202, 0.3);
 }
