@@ -632,7 +632,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: auto 191px auto 0;
+  margin: auto 192px auto 0;
   padding: 0;
 }
 
@@ -660,10 +660,42 @@ body {
   width: 48px;
   height: 48px;
   margin-right: 8px;
+  border: 2px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.hotel-group-button-active {
+  border-color: #000;
+}
+
+.hotel-group-button:first-child {
+  background: url("../images/icons/icon-table.svg") no-repeat 50% 50%;
+}
+
+.hotel-group-button:nth-child(2) {
+  background: url("../images/icons/icon-slideshow.svg") no-repeat 50% 50%;
+}
+
+.hotel-group-button:last-child {
+  background: url("../images/icons/icon-list.svg") no-repeat 50% 50%;
 }
 
 .hotel-group-button:nth-child(3n) {
   margin-right: 0;
+}
+
+.hotel-group-button:hover {
+  border-color: #000;
+}
+
+.hotel-group-button:focus {
+  border: none;
+  outline: 2px solid #68A2CA;
+}
+
+.hotel-group-button:active {
+  border-color: #000;
 }
 
 .hotel-card-container {
@@ -774,7 +806,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0 auto 25px;
+  margin: 0 71px 25px 73px;
 }
 
 .pagination-list {
@@ -840,23 +872,29 @@ body {
 }
 
 .navigation-button:hover,
-.main-button:hover {
+.main-button:hover,
+.button-card:hover {
   background-color: #615048;
 }
 
 .navigation-button:focus,
-.main-button:focus {
+.main-button:focus,
+.button-card:focus {
   background-color: #615048;
 }
 
 .navigation-button:active,
-.main-button:active {
+.main-button:active,
+.button-card:active,
+.button-card-additional:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
 .navigation-button:disabled,
 .main-button:disabled,
-.button-additional:disabled {
+.button-additional:disabled,
+.button-filter:disabled,
+.button-card:disabled {
   background-color: #E5E5E5;
 }
 
@@ -892,15 +930,24 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-.button-additional:hover {
+.button-additional:hover,
+.button-filter:hover,
+.button-card-additional:hover,
+.pagination-link:hover {
   background-color: #68A2CA;
 }
 
-.button-additional:focus {
+.button-additional:focus,
+.button-filter:focus,
+.button-card-additional:focus,
+.pagination-link:focus {
   background-color: #68A2CA;
 }
 
-.button-additional:active {
+.button-additional:active,
+.button-filter:active,
+.button-card:active,
+.pagination-link:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -914,4 +961,37 @@ body {
 
 .social-icon:active {
   fill: rgba(104, 162, 202, 0.3);
+}
+
+.button-reset:hover {
+  opacity: .6;
+}
+
+.button-reset:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.button-reset:active {
+  opacity: .3;
+  outline: none;
+}
+
+.button-card-active:hover {
+  background-color: #6C9E42;
+}
+
+.button-card-active:focus {
+  background-color: #6C9E42;
+}
+
+.button-card-active:active {
+  background-color: #7DB54F;
+}
+
+.pagination-link-active:hover,
+.pagination-link-active:focus,
+.pagination-link-active:active {
+  background-color: #F2F2F2;
+  color: #000;
 }
