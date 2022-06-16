@@ -24,6 +24,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
+  background-color: #F2F2F2;
   height: 100%;
 }
 
@@ -44,6 +45,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  background-color: #FFFFFF;
 }
 
 /* Header */
@@ -184,11 +186,21 @@ body {
 }
 
 .greetings {
+  position: relative;
   display: flex;
   flex-direction: column;
   background: url("../images/background/index-background.jpg") no-repeat 50% 0/100% auto;
   text-align: center;
   padding: 51px 0 0;
+}
+
+.greetings::after {
+  position: absolute;
+  content: "";
+  background: url("../images/icons/divider.svg") no-repeat;
+  width: 1200px;
+  height: 57px;
+  top: 428px;
 }
 
 .greetings-image {
@@ -333,6 +345,7 @@ body {
   flex-direction: column;
   padding-top: 91px;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .interesting-title,
@@ -381,8 +394,8 @@ body {
 .main-button {
   font-size: 20px;
   line-height: 36px;
-  min-width: 574px;
-  margin: 56px auto 93px;
+  max-width: 574px;
+  margin: 56px 313px 93px;
   padding: 12px 15px;
 }
 
@@ -400,6 +413,7 @@ body {
 .page-footer {
   display: flex;
   padding: 40px 70px 30px;
+  background-color: #ffffff;
 }
 
 .footer-social {
@@ -868,6 +882,7 @@ body {
 
 .subscription-catalog {
   background: none;
+  background-color: #ffffff;
 }
 
 .subscription-catalog-title {
