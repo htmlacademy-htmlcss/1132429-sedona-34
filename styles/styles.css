@@ -482,7 +482,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 5px;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 69px;
   background: url("../images/background/catalog-background.jpg") no-repeat 50% 0/ cover;
   color: #ffffff;
 }
@@ -538,6 +538,14 @@ body {
   margin-top: 4px;
 }
 
+.breadcrumbs-icon:hover {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-icon:active {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
 .breadcrumbs-link {
   display: block;
   font-style: inherit;
@@ -545,6 +553,14 @@ body {
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .filter-catalog {
@@ -721,7 +737,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 0 18px;
-  margin: 0 auto 96px;
+  margin: 0 71px 96px 73px;
 }
 
 .hotel-card {
@@ -845,11 +861,20 @@ body {
 }
 
 .pagination {
+  position: relative;
   width: 1056px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   margin: 0 71px 25px 73px;
+}
+
+.pagination::before {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #E6E6E6;
+  width: 100%;
+  bottom: 89px;
 }
 
 .pagination-list {
