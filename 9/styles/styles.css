@@ -629,6 +629,7 @@ body {
 
 .filter-catalog-price {
   max-width: 288px;
+  margin-right: 70px;
 }
 
 .range-scale {
@@ -677,6 +678,52 @@ body {
 .toggle-max {
   top: -8px;
   right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  position: relative;
+  width: 288px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.range-wrapper-inputs::after {
+  position: absolute;
+  content: "";
+  border-right: 2px solid #fff;
+  left: 143px;
+  top: 0;
+  bottom: 0;
+}
+
+.catalog-filter-label {
+  display: flex;
+  align-items: center;
+  margin-right: 14px;
+}
+
+.range-input {
+  width: 60px;
+  padding: 12px 0 11px 19px;
+  font: inherit;
+  color: #fff;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+  margin-right: 32px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-filter-label {
+
 }
 
 .filter-buttons {
