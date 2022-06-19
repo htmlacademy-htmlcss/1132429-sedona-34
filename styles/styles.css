@@ -378,19 +378,26 @@ body {
   display: flex;
   align-items: center;
   min-width: 800px;
-  margin: 46px auto 94px;
+  margin: 45px auto 94px;
 }
 
 .subscription-email-input {
   min-width: 600px;
   height: 60px;
-  padding: 0;
+  margin: 0;
+  padding: 20px 0 19px 22px;
   border-radius: 10px 0 0 10px;
+  box-sizing: border-box;
   border: 0;
   font-size: 18px;
   line-height: 21px;
-  color: #000000;
   background-color: #ffffff;
+  font-family: inherit;
+}
+
+.subscription-email-input::placeholder {
+  color: #000;
+  opacity: .6;
 }
 
 .main-button {
@@ -621,7 +628,55 @@ body {
 }
 
 .filter-catalog-price {
-  max-width: 290px;
+  max-width: 288px;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 32px;
+  background-color: rgba(255, 255, 255, 0.3)
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #fff;
+  width: 228px;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  outline: none;
+  border: 3px solid #83B3D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  border: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
 }
 
 .filter-buttons {
