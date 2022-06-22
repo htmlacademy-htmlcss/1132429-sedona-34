@@ -1296,6 +1296,10 @@ body {
   box-sizing: border-box;
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal-search {
   width: 715px;
 }
@@ -1375,6 +1379,7 @@ body {
 .search-form-quantity {
   width: 133px;
   padding: 15px 62px 14px 61px;
+  background-color: #f2f2f2;
 }
 
 .modal-search-status {
