@@ -1285,6 +1285,7 @@ body {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 2;
+
 }
 
 .modal {
@@ -1294,6 +1295,7 @@ body {
   background-color: #fff;
   border-radius: 30px;
   box-sizing: border-box;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
 .modal-container-close {
@@ -1333,6 +1335,7 @@ body {
 }
 
 .modal-close-button:active {
+  outline: none;
   background-color: #E6E6E6;
 }
 
@@ -1356,12 +1359,11 @@ body {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  margin: 12px auto 0 0;
 }
 
 .field {
   position: relative;
-  font-style: inherit;
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   color: #000;
@@ -1376,10 +1378,23 @@ body {
   background: #f2f2f2 url(../images/icons/icon-date.svg) no-repeat 386px center;
 }
 
+.quantity-group {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .search-form-quantity {
   width: 133px;
-  padding: 15px 62px 14px 61px;
+  padding: 15px 0 14px 0;
+  text-align: center;
   background-color: #f2f2f2;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
 }
 
 .modal-search-status {
@@ -1390,6 +1405,63 @@ body {
   padding: 8px 0 0 0;
   margin: 0 0 0 155px;
   color: #333;
+}
+
+.button-decrease,
+.button-increase {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  z-index: 1;
+}
+
+.button-decrease {
+  top: center;
+  right: 97px;
+}
+
+.button-increase {
+  top: center;
+  right: 15px;
+}
+
+.modal-icon-decrease,
+.modal-icon-increase {
+  fill: #000;
+  opacity: 0.3;
+}
+
+.modal-children-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 79px;
+}
+
+.modal-children-info {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  margin: 0;
+  background-color: #83B3D3;
+  border-radius: 50%;
+}
+
+.modal-children-info:hover {
+  background-color: #68A2CA;
+}
+
+.modal-icon-info {
+  fill: #fff;
+  margin: 8px 12px;
 }
 
 .modal-search-status-incorrect {
@@ -1408,6 +1480,7 @@ body {
   display: flex;
   width: 575px;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -1415,8 +1488,107 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  margin: 0;
   padding: 12px 26px;
   background-color: #83B3D3;
   border-radius: 10px;
   text-transform: uppercase;
+}
+
+.modal-button:hover {
+  background-color: #68A2CA;
+}
+
+.modal-button:focus {
+  outline: 3px solid #756257;
+  background-color: #68A2CA;
+}
+
+.modal-button:active {
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #68A2CA;
+}
+
+.popover {
+  position: absolute;
+  width: 256px;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 15px 18px 23px 22px;
+  box-sizing: border-box;
+  top: 42px;
+  left: -115px;
+  z-index: 1;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.popover::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 19px;
+  background-color: #333;
+  transform: rotate(45deg);
+  top: -5px;
+  left: 119px;
+}
+
+.popover-close {
+  display: none;
+}
+
+.popover-description {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+.search-form-field:hover,
+.search-form-quantity:hover {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #E6E6E6;
+}
+
+.search-form-field:focus,
+.search-form-quantity:focus {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.search-form-field:active,
+.search-form-quantity:active {
+  color: #000;
+  background-color: #fff;
+  outline: 2px solid #000000;
+}
+
+.button-decrease:hover .modal-icon-decrease,
+.button-increase:hover .modal-icon-increase {
+  fill: #000;
+  opacity: 1;
+}
+
+.button-decrease:focus,
+.button-increase:focus {
+  outline: none;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.button-decrease:focus .modal-icon-decrease,
+.button-increase:focus .modal-icon-increase {
+  fill: #000;
+  opacity: 1;
+}
+
+.button-decrease:active .modal-icon-decrease,
+.button-increase:active .modal-icon-increase {
+  fill: #000;
+  opacity: 0.2;
 }

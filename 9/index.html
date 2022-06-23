@@ -76,11 +76,11 @@
             <ul class="advantages-sublist">
               <li class="advantages-subitem advantages-subitem-housing">
                 <h4 class="advantages-subtitle">Жильё</h4>
-                <p class="advantages-subdescription">Рекомендуем пожить &nbsp;в&nbsp;настоящем мотеле,<br>всё как в кино!</p>
+                <p class="advantages-subdescription">Рекомендуем пожить &nbsp;в&nbsp;настоящем мотеле,&nbsp;<br>всё как в кино!</p>
               </li>
               <li class="advantages-subitem advantages-subitem-food">
                 <h4 class="advantages-subtitle">Еда</h4>
-                <p class="advantages-subdescription">Всегда заказывайте&nbsp; топовый фирменный бургер, вы не разочаруетесь!</p>
+                <p class="advantages-subdescription">&nbsp;Всегда заказывайте&nbsp; топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="advantages-subitem advantages-subitem-souvenir">
                 <h4 class="advantages-subtitle">Сувениры</h4>
@@ -215,11 +215,58 @@
               </div>
                 <div class="quantity-group">
                   <label class="modal-search-label" for="modal-adults">Взрослые:</label>
-                  <input class="field search-form-quantity" type="number" name="modal-adults" id="modal-adults" value="2">
+                  <input class="field search-form-quantity" type="number" name="modal-adults" id="modal-adults" min="0" value="2">
+                  <button class="button-decrease" type="button">
+                    <svg class="modal-icon-decrease" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L0 1L13 1V0L0 0Z"/>
+                    </svg>
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button>
+                  <button class="button-increase" type="button">
+                    <svg class="modal-icon-increase" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                    </svg>
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
                 </div>
                 <div class="quantity-group">
-                  <label class="modal-search-label" for="modal-children">Дети:</label>
-                  <input class="field search-form-quantity" type="number" name="modal-children" id="modal-children" value="1">
+                  <div class="modal-children-container">
+                    <label class="modal-search-label" for="modal-children">Дети:</label>
+                    <span class="modal-children-info">
+                      <svg class="modal-icon-info" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_39785_729)">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9H1L1 3H0L0 9Z"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0H0V1H1V0Z"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_39785_729">
+                            <rect fill-rule="evenodd" clip-rule="evenodd" width="1" height="9"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <div class="popover popover-close">
+                        <section>
+                          <h2 class="visually-hidden">Важная информация по размещению детей</h2>
+                          <p class="popover-description">
+                            Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                          </p>
+                        </section>
+                      </div>
+                    </span>
+                  </div>
+                  <input class="field search-form-quantity" type="number" name="modal-children" id="modal-children" min="0" value="1">
+                  <button class="button-decrease" type="button">
+                    <svg class="modal-icon-decrease" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L0 1L13 1V0L0 0Z"/>
+                    </svg>
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button>
+                  <button class="button-increase" type="button">
+                    <svg class="modal-icon-increase" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                    </svg>
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
                 </div>
             </div>
             <a class="button modal-button" href="#">Найти</a>
