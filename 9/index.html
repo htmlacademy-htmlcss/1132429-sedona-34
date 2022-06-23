@@ -191,6 +191,42 @@
         </a>
       </section>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <svg class="modal-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"/>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form-search" action="https://echo.htmlacademy.ru" method="post">
+            <div class="modal-form-info">
+              <div class="field-group">
+                <label class="modal-search-label" for="modal-date">Дата Заезда:</label>
+                <input class="field search-form-field" type="text" name="modal-date" id="modal-date" placeholder="Укажите дату" value="27 апреля 2020">
+                <p class="modal-search-status modal-search-status-incorrect">Мы не можем отправить вас в прошлое.</p>
+              </div>
+              <div class="field-group">
+                <label class="modal-search-label" for="modal-entry">Дата Выезда:</label>
+                <input class="field search-form-field" type="text" name="modal-entry" id="modal-entry" placeholder="Укажите дату" value="1 сентября 2021">
+                <p class="modal-search-status">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+                <div class="quantity-group">
+                  <label class="modal-search-label" for="modal-adults">Взрослые:</label>
+                  <input class="field search-form-quantity" type="number" name="modal-adults" id="modal-adults" value="2">
+                </div>
+                <div class="quantity-group">
+                  <label class="modal-search-label" for="modal-children">Дети:</label>
+                  <input class="field search-form-quantity" type="number" name="modal-children" id="modal-children" value="1">
+                </div>
+            </div>
+            <a class="button modal-button" href="#">Найти</a>
+          </form>
+        </section>
+      </div>
+    </div>
   </div>
   </body>
 </html>
