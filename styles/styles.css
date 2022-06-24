@@ -192,7 +192,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  background: url("../images/background/index-background.jpg") no-repeat 50% 0/100% auto;
+  background: url("../images/background/index-background.jpg") no-repeat 50% 0/100% auto, linear-gradient(to bottom, #f2f2f2 450px, #fff 450px);
   text-align: center;
   padding: 51px 0 0;
 }
@@ -490,7 +490,7 @@ body {
   flex-direction: column;
   margin-bottom: 5px;
   padding: 35px 70px 69px;
-  background: url("../images/background/catalog-background.jpg") no-repeat 50% 0/ cover;
+  background: rgba(131, 179, 211, 0.2) url("../images/background/catalog-background.jpg") no-repeat 50% 0/cover;
   color: #ffffff;
 }
 
@@ -792,7 +792,7 @@ body {
 
 .range-input:focus {
   outline: none;
-  box-shadow: 0 0 0 3px #81B3D2
+  box-shadow: 0 0 0 3px #81B3D2;
 }
 
 .range-input:active {
@@ -1502,6 +1502,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .modal-button:focus {
   outline: 3px solid #756257;
   background-color: #68A2CA;
+  outline-offset: 0;
 }
 
 .modal-button:active {
@@ -1510,7 +1511,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: #68A2CA;
 }
 
-.popover {
+.tooltip {
   position: absolute;
   width: 256px;
   background-color: #333;
@@ -1521,9 +1522,10 @@ input[type="number"]::-webkit-inner-spin-button {
   left: -115px;
   z-index: 1;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  display: none;
 }
 
-.popover::after {
+.tooltip::after {
   display: block;
   position: absolute;
   content: "";
@@ -1535,11 +1537,7 @@ input[type="number"]::-webkit-inner-spin-button {
   left: 119px;
 }
 
-.popover-close {
-  display: none;
-}
-
-.popover-description {
+.tooltip-description {
   font-family: inherit;
   font-size: 16px;
   line-height: 21px;
