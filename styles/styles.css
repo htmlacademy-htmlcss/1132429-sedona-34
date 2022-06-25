@@ -547,6 +547,7 @@ body {
 
 .breadcrumbs-icon:hover {
   fill: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 .breadcrumbs-icon:active {
@@ -564,6 +565,7 @@ body {
 
 .breadcrumbs-link:hover {
   color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 .breadcrumbs-link:active {
@@ -725,6 +727,7 @@ body {
 
 .range-toggle:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .range-toggle:focus {
@@ -924,6 +927,7 @@ body {
 
 .hotel-group-button:hover {
   border-color: #000;
+  cursor: pointer;
 }
 
 .hotel-group-button:focus {
@@ -1155,6 +1159,7 @@ body {
 .main-button:hover,
 .button-card:hover {
   background-color: #615048;
+  cursor: pointer;
 }
 
 .navigation-button:focus,
@@ -1181,6 +1186,7 @@ body {
 .navigation-link:hover,
 .footer-contacts-phone:hover {
   color: #756157;
+  cursor: pointer;
 }
 
 .navigation-link:focus,
@@ -1198,6 +1204,7 @@ body {
 .navigation-icon:hover,
 .footer-academylogo:hover {
   fill: #756157;
+  cursor: pointer;
 }
 
 .navigation-icon:focus,
@@ -1215,6 +1222,7 @@ body {
 .button-card-additional:hover,
 .pagination-link:hover {
   background-color: #68A2CA;
+  cursor: pointer;
 }
 
 .button-additional:focus,
@@ -1233,6 +1241,7 @@ body {
 
 .social-icon:hover {
   fill: #68A2CA;
+  cursor: pointer;
 }
 
 .social-icon:focus {
@@ -1245,6 +1254,7 @@ body {
 
 .button-reset:hover {
   opacity: .6;
+  cursor: pointer;
 }
 
 .button-reset:focus {
@@ -1274,6 +1284,7 @@ body {
 .pagination-link-active:active {
   background-color: #F2F2F2;
   color: #000;
+  cursor: pointer;
 }
 
 .modal-container {
@@ -1327,6 +1338,7 @@ body {
 
 .modal-close-button:hover {
   background-color: #E6E6E6;
+  cursor: pointer;
 }
 
 .modal-close-button:focus {
@@ -1405,6 +1417,10 @@ body {
   right: 17px;
   border: none;
   background: url(../images/icons/icon-date.svg) no-repeat;
+}
+
+.button-calendar:hover {
+  cursor: pointer;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -1553,6 +1569,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .modal-button:hover {
   background-color: #68A2CA;
+  cursor: pointer;
 }
 
 .modal-button:focus {
@@ -1591,6 +1608,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .button-increase:hover .modal-icon-increase {
   fill: #000;
   opacity: 1;
+  cursor: pointer;
 }
 
 .button-decrease:focus,
