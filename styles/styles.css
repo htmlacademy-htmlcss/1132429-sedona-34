@@ -1375,7 +1375,7 @@ body {
 .search-form-field {
   width: 420px;
   padding: 15px 250px 14px 19px;
-  background: #f2f2f2 url(../images/icons/icon-date.svg) no-repeat 386px center;
+  background: #f2f2f2;
 }
 
 .quantity-group {
@@ -1387,9 +1387,24 @@ body {
 
 .search-form-quantity {
   width: 133px;
-  padding: 15px 0 14px 0;
+  padding: 15px 40px 14px 40px;
   text-align: center;
   background-color: #f2f2f2;
+}
+
+.button-calendar {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17px;
+  height: 17px;
+  padding: 0;
+  margin: 0;
+  top: 17px;
+  right: 17px;
+  border: none;
+  background: url(../images/icons/icon-date.svg) no-repeat;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -1444,22 +1459,64 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 79px;
 }
 
-.modal-children-info {
-  position: relative;
-  display: block;
+.tooltip {
   width: 25px;
   height: 25px;
+}
+
+.tooltip-toogle{
+  display: block;
+  border: none;
+  background-color: #83B3D3;
   padding: 0;
   margin: 0;
-  background-color: #83B3D3;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
 }
 
-.modal-children-info:hover {
+.tooltip-toogle:hover,
+.tooltip-toogle:focus {
   background-color: #68A2CA;
 }
 
-.modal-icon-info {
+.tooltip-toogle:hover + .tooltip-text,
+.tooltip-toogle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text {
+  width: 256px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 15%;
+  margin-top: 4px;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 15px 18px 23px 22px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  z-index: 1;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.tooltip-text::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 19px;
+  background-color: #333;
+  transform: rotate(45deg);
+  top: -5px;
+  left: 118px;
+}
+
+.tooltip-icon {
   fill: #fff;
   margin: 8px 12px;
 }
@@ -1477,6 +1534,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .field-group {
   grid-column: 1/-1;
+  position: relative;
   display: flex;
   width: 575px;
   justify-content: space-between;
@@ -1509,41 +1567,6 @@ input[type="number"]::-webkit-inner-spin-button {
   outline: none;
   color: rgba(255, 255, 255, 0.3);
   background-color: #68A2CA;
-}
-
-.tooltip {
-  position: absolute;
-  width: 256px;
-  background-color: #333;
-  border-radius: 10px;
-  padding: 15px 18px 23px 22px;
-  box-sizing: border-box;
-  top: 42px;
-  left: -115px;
-  z-index: 1;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  display: none;
-}
-
-.tooltip::after {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 19px;
-  height: 19px;
-  background-color: #333;
-  transform: rotate(45deg);
-  top: -5px;
-  left: 119px;
-}
-
-.tooltip-description {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 21px;
-  padding: 0;
-  margin: 0;
-  color: #fff;
 }
 
 .search-form-field:hover,
