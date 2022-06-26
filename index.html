@@ -5,7 +5,7 @@
     <meta name="keywords" content="отдых, поиск отелей, отпуск, бронирование отелей">
     <meta name="description" content="Сервис по поиску отелей Седона">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -190,12 +190,13 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M98.2 17.9C96.6 17.9 95.3 18.7 94.6 19.9H94.5C93.9 18.7 92.7 17.9 91.1 17.9C89.7 17.9 88.6 18.6 88 19.7V18.2H86.1V28.8H88.1V23.4C88.1 21.4 89.1 20 90.7 19.9C92.2 19.9 93.1 20.9 93.1 22.5V28.8H95.1V23.2C95.1 20.8 96.5 19.9 97.7 19.9C99.2 19.9 100.1 20.9 100.1 22.5V28.8H102.1V22.3C102.2 19.7 100.7 17.9 98.2 17.9Z"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M109.4 27L105.8 18.1H103.6L108.4 29.7C108.1 30.6 107.7 30.9 106.7 30.9H104.2V32.9H106.7C108.5 32.9 109.5 32.1 110.2 30.3L114.9 18.1H112.8L109.4 27Z"/>
           </svg>
+          <span class="visually-hidden">Ссылка на Htmlacademy</span>
         </a>
       </section>
     </footer>
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <svg class="modal-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"/>
           </svg>
@@ -242,7 +243,7 @@
                     <label class="modal-search-label" for="modal-children">Дети:</label>
                     <span class="tooltip">
                       <button class="tooltip-toogle" type="button" aria-labelledby="tooltip-label">
-                        <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Важная информация по детям.">
                           <g clip-path="url(#clip0_39785_729)">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9H1L1 3H0L0 9Z"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0H0V1H1V0Z"/>
@@ -272,7 +273,7 @@
                   </button>
                 </div>
             </div>
-            <a class="button modal-button" href="#">Найти</a>
+            <button class="button modal-button" type="submit">Найти</button>
           </form>
         </section>
       </div>
