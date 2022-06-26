@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="keywords" content="отдых, поиск отелей, отпуск, бронирование отелей">
+    <meta name="description" content="Сервис по поиску отелей Седона">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.svg">
     <link rel="stylesheet" href="styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/1132429-sedona-34/9/">
 </head>
@@ -76,7 +79,7 @@
             <ul class="advantages-sublist">
               <li class="advantages-subitem advantages-subitem-housing">
                 <h4 class="advantages-subtitle">Жильё</h4>
-                <p class="advantages-subdescription">Рекомендуем пожить &nbsp;в&nbsp;настоящем мотеле,&nbsp;<br>всё как в кино!</p>
+                <p class="advantages-subdescription">Рекомендуем пожить &nbsp;в&nbsp;настоящем мотеле,&nbsp;&nbsp;<br>всё как в кино!</p>
               </li>
               <li class="advantages-subitem advantages-subitem-food">
                 <h4 class="advantages-subtitle">Еда</h4>
@@ -206,11 +209,17 @@
               <div class="field-group">
                 <label class="modal-search-label" for="modal-date">Дата Заезда:</label>
                 <input class="field search-form-field" type="text" name="modal-date" id="modal-date" placeholder="Укажите дату" value="27 апреля 2020">
+                <button class="button-calendar" type="button">
+                  <span class="visually-hidden">Открыть календарь</span>
+                </button>
                 <p class="modal-search-status modal-search-status-incorrect">Мы не можем отправить вас в прошлое.</p>
               </div>
               <div class="field-group">
                 <label class="modal-search-label" for="modal-entry">Дата Выезда:</label>
                 <input class="field search-form-field" type="text" name="modal-entry" id="modal-entry" placeholder="Укажите дату" value="1 сентября 2021">
+                <button class="button-calendar" type="button">
+                  <span class="visually-hidden">Открыть календарь</span>
+                </button>
                 <p class="modal-search-status">На эти даты есть свободные номера. Пока есть.</p>
               </div>
                 <div class="quantity-group">
@@ -232,26 +241,21 @@
                 <div class="quantity-group">
                   <div class="modal-children-container">
                     <label class="modal-search-label" for="modal-children">Дети:</label>
-                    <span class="modal-children-info">
-                      <svg class="modal-icon-info" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_39785_729)">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9H1L1 3H0L0 9Z"/>
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0H0V1H1V0Z"/>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_39785_729">
-                            <rect fill-rule="evenodd" clip-rule="evenodd" width="1" height="9"/>
-                          </clipPath>
-                        </defs>
-                      </svg>
-                      <div class="popover popover-close">
-                        <section>
-                          <h2 class="visually-hidden">Важная информация по размещению детей</h2>
-                          <p class="popover-description">
-                            Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                          </p>
-                        </section>
-                      </div>
+                    <span class="tooltip">
+                      <button class="tooltip-toogle" type="button" aria-labelledby="tooltip-label">
+                        <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_39785_729)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9H1L1 3H0L0 9Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0H0V1H1V0Z"/>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_39785_729">
+                              <rect fill-rule="evenodd" clip-rule="evenodd" width="1" height="9"/>
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                     </span>
                   </div>
                   <input class="field search-form-quantity" type="number" name="modal-children" id="modal-children" min="0" value="1">
